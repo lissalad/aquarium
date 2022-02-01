@@ -13,11 +13,20 @@ class Fish {
   }
 
   swim(width) {
-    if (this.x > width - 170 || this.x < 40) {
+    if (this.x > width - this.width || this.x < 0) {
       this.dx = -this.dx
       // this.flip();
-    }
+    } 
     this.x += this.dx;
+
+    // let zoom = this.dx;
+    // for(let i = 0; i < 3; i += 1) {
+    //   this.x += zoom;
+    // }
+    // for(let i = 0; i < 2; i += 1) {
+    //   this.x += zoom;
+    //   zoom = .02;
+    // }
   }
 
   // flip() {

@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "konva": "^8.3.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.18"
   }
 }
